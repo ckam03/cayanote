@@ -16,7 +16,7 @@ const Dashboard = () => {
     setBoards([...boards, newBoard]);
   };
   return (
-    <div className="flex items-center space-x-2 w-screen h-screen">
+    <div className="flex items-center space-x-2">
       <NewComponentProvider>
         {boards.map((board, index) => {
           return (
@@ -26,7 +26,6 @@ const Dashboard = () => {
                 key={board.id}
               >
                 {board.id}
-                {/* <Board boardId={board.id} /> */}
               </div>
             </Link>
           );

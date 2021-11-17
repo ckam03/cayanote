@@ -7,7 +7,7 @@ namespace CayanoteAPI.Models
         
         public int Id { get; set; }
         public string? Name { get; set; }
-        
+        [Key]
         public Dictionary<int, string>? Components { get; set; }
     }
 }
