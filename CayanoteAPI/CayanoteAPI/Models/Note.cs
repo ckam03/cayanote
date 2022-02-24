@@ -3,8 +3,8 @@
     public record Note
     {
         public int Id { get; init; }
-        public string? Name { get; set; }
-        public string? Color { get; set; }
-        public string? Content { get; set; }
+        public string Name { get; set; } = String.Empty;
+        public string Color { get; set; } = String.Empty;
+        public string Content { get; set; } = String.Empty;
     }
 }

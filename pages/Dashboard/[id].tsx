@@ -1,4 +1,3 @@
-
 import React, { useContext, useEffect, useState } from "react";
 import NewComponentMenu from "../../components/NewComponentMenu";
 import Container from "../../components/NewComponents/Container/Container";
@@ -45,7 +44,7 @@ const BoardId = () => {
     <div>
       <div
         style={{ height: "calc(100vh - 3rem)" }}
-        className={` flex space-x-10 dark:bg-gray-700 w-screen z-0`}
+        className={`flex space-x-10 dark:bg-gray-700 w-screen z-0`}
         >
         
       

@@ -1,4 +1,3 @@
-
 import React, { useContext, useEffect, useState } from "react";
 import NewComponentMenu from "./NewComponentMenu";
 import Container from "./NewComponents/Container/Container";
@@ -46,9 +45,7 @@ const Board = () => {
       <div
         style={{ height: "calc(100vh - 3rem)" }}
         className={` flex space-x-10 dark:bg-gray-700 w-screen z-0`}
-        >
-        
-      
+        >     
         <DndProvider backend={HTML5Backend}>
           <NewComponentMenu />
           <div className="grid grid-cols-6 gap-8 ml-4 mt-10 dark:bg-gray-700">

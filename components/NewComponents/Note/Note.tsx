@@ -38,11 +38,9 @@ const Note: React.FC<INote> = ({ id }) => {
   };
 
   useEffect(() => {
-
       handleSubmit().then((res) => {
         console.log("posted")
       })
-
   }, [])
 
   console.log(title);

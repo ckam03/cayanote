@@ -2,9 +2,8 @@
 {
     public record UnsplashResponse
     {
-        public List<string>? Result { get; init; }
-        /*public string? Author { get; init; }
-        public string? Location { get; init; }
-        public string? Url { get; init; }*/
+        public string Author { get; init; } = String.Empty;
+        public string Location { get; init; } = String.Empty;
+        public string Url { get; init; } = String.Empty;
     }
 }

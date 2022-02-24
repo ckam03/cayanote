@@ -2,6 +2,7 @@
 using CayanoteAPI.Dtos;
 using CayanoteAPI.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace CayanoteAPI.Controllers
 {
@@ -10,16 +11,16 @@ namespace CayanoteAPI.Controllers
     public class BoardController : ControllerBase
     {
         private readonly CayanoteDBContext _dbContext;
-        public BoardController(CayanoteDBContext db)
+        public BoardController(CayanoteDBContext dbContext)
         {
-            _dbContext = db; 
+            _dbContext = dbContext; 
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetBoards()
+        public async Task GetBoards()
         {
-            var boards = await GetBoards();
-            return boards;
+            await _dbContext.Boards.ToListAsync();
+
         }
 
         [HttpGet("{id}")]

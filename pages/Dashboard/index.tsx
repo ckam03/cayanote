@@ -25,11 +25,12 @@ const Dashboard = () => {
                 className="h-60 w-60 border-2 border-black text-black flex items-center cursor-pointer"
                 key={board.id}
               >
-                {board.id}
+                {board.id} 
               </div>
             </Link>
           );
         })}
+        {/* <Board /> */}
         <AddBoard createBoard={createBoard} />
       </NewComponentProvider>
     </div>
